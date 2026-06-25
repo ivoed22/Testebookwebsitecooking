@@ -77,8 +77,12 @@ export function LeadMagnet() {
                   className="mt-8 flex flex-col gap-3 sm:flex-row"
                 >
                   <div className="relative flex-1">
+                    <label htmlFor="lead-email" className="sr-only">
+                      Email address
+                    </label>
                     <Mail className="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-forest-700/50" />
                     <input
+                      id="lead-email"
                       type="email"
                       required
                       value={email}
