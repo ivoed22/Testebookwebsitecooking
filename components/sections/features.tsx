@@ -35,7 +35,7 @@ export function Features() {
           title={
             <>
               Everything you need to{" "}
-              <span className="text-gradient-forest">eat well, effortlessly</span>
+              <span className="text-forest-700">eat well, effortlessly</span>
             </>
           }
           subtitle="We obsess over the details so healthy eating finally fits into your real life."

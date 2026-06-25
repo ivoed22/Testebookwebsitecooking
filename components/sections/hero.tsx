@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, Sparkles, Star, ShieldCheck, Zap } from "lucide-react";
+import { ArrowRight, Sparkles, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const badges = [
@@ -23,7 +23,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative overflow-hidden bg-cream bg-grain pt-32 pb-20 lg:pt-40 lg:pb-28"
+      className="relative overflow-hidden bg-cream bg-grain pt-28 pb-20 lg:pt-32 lg:pb-24"
     >
       {/* ambient gradient blobs */}
       <div className="pointer-events-none absolute -top-24 -right-24 h-96 w-96 rounded-full bg-forest-500/20 blur-3xl" />
@@ -80,40 +80,6 @@ export function Hero() {
             <Button size="lg" variant="outline" asChild>
               <a href="#lead-magnet">Get Free Recipes</a>
             </Button>
-          </motion.div>
-
-          {/* Trust indicators */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.7, delay: 0.5 }}
-            className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3"
-          >
-            <div className="flex items-center gap-2">
-              <div className="flex -space-x-2">
-                {[47, 12, 32, 24].map((i) => (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img
-                    key={i}
-                    src={`https://i.pravatar.cc/80?img=${i}`}
-                    alt="Customer"
-                    className="h-8 w-8 rounded-full border-2 border-cream object-cover"
-                  />
-                ))}
-              </div>
-              <div className="text-sm">
-                <div className="flex items-center gap-0.5 text-gold">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <Star key={i} className="h-3.5 w-3.5 fill-gold" />
-                  ))}
-                </div>
-                <span className="text-ink/60">4.9/5 from 5,000+ reviews</span>
-              </div>
-            </div>
-            <div className="flex items-center gap-2 text-sm text-ink/60">
-              <ShieldCheck className="h-5 w-5 text-forest-500" />
-              30-day money-back guarantee
-            </div>
           </motion.div>
         </div>
 

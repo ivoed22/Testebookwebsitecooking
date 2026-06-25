@@ -29,7 +29,6 @@ export function Testimonials() {
       <div className="container relative">
         <SectionHeading
           dark
-          eyebrow="Real Transformations"
           title={
             <>
               Results worth <span className="text-gradient-gold">talking about</span>

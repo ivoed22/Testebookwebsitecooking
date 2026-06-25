@@ -27,7 +27,7 @@ export function Ebooks() {
             eyebrow="The Collection"
             title={
               <>
-                Premium e-books, <span className="text-gradient-forest">crafted to convert</span> goals into results
+                Premium e-books, <span className="text-forest-700">crafted to convert</span> goals into results
               </>
             }
             subtitle="Beautifully designed, dietitian-informed recipe collections you'll actually use every week."
