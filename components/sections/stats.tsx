@@ -7,6 +7,7 @@ import {
   useMotionValue,
   animate,
 } from "framer-motion";
+import { Star, ShieldCheck } from "lucide-react";
 import { stats } from "@/lib/data";
 
 function Counter({
@@ -75,6 +76,41 @@ export function Stats() {
             </motion.div>
           ))}
         </div>
+
+        {/* Trust strip (relocated out of the hero per single-message hero rule) */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="mt-6 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-8"
+        >
+          <div className="flex items-center gap-3">
+            <div className="flex -space-x-2">
+              {[47, 12, 32, 24].map((i) => (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  key={i}
+                  src={`https://i.pravatar.cc/80?img=${i}`}
+                  alt="Customer"
+                  className="h-8 w-8 rounded-full border-2 border-cream object-cover"
+                />
+              ))}
+            </div>
+            <div className="text-sm">
+              <div className="flex items-center gap-0.5">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <Star key={i} className="h-3.5 w-3.5 fill-gold text-gold" />
+                ))}
+              </div>
+              <span className="text-ink/60">4.9/5 from 5,000+ reviews</span>
+            </div>
+          </div>
+          <div className="flex items-center gap-2 text-sm text-ink/60">
+            <ShieldCheck className="h-5 w-5 text-forest-500" />
+            30-day money-back guarantee
+          </div>
+        </motion.div>
       </div>
     </section>
   );

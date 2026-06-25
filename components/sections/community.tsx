@@ -12,11 +12,10 @@ export function Community() {
     <section className="bg-cream py-20 lg:py-28">
       <div className="container">
         <SectionHeading
-          eyebrow="The Community"
           title={
             <>
               Join the{" "}
-              <span className="text-gradient-forest">#FoodVybes</span> movement
+              <span className="text-forest-700">#FoodVybes</span> movement
             </>
           }
           subtitle="Real meals from a community of 50,000+ healthy eaters. Tag us to be featured."

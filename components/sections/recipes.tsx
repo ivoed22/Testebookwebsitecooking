@@ -11,11 +11,10 @@ export function Recipes() {
     <section id="recipes" className="bg-cream-dark py-20 lg:py-28">
       <div className="container">
         <SectionHeading
-          eyebrow="A Taste Of Inside"
           title={
             <>
               Recipes that look as good as they{" "}
-              <span className="text-gradient-forest">make you feel</span>
+              <span className="text-forest-700">make you feel</span>
             </>
           }
           subtitle="Every recipe is photographed, macro-counted and ready in minutes."

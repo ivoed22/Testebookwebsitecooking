@@ -20,11 +20,10 @@ export function Faq() {
           <div>
             <SectionHeading
               align="left"
-              eyebrow="FAQ"
               title={
                 <>
                   Questions?{" "}
-                  <span className="text-gradient-forest">Answered.</span>
+                  <span className="text-forest-700">Answered.</span>
                 </>
               }
               subtitle="Everything you need to know before you start. Still curious? We're a message away."
