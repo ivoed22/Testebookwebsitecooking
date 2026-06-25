@@ -47,7 +47,11 @@ export function Footer() {
                 }}
                 className="mt-3 flex gap-2"
               >
+                <label htmlFor="footer-email" className="sr-only">
+                  Email address
+                </label>
                 <input
+                  id="footer-email"
                   type="email"
                   required
                   value={email}
